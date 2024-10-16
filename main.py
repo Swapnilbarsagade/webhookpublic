@@ -6,6 +6,7 @@ def backup_mysql_database(host, user, password, db_name, backup_dir):
     # Create backup directory if it doesn't exist
     if not os.path.exists(backup_dir):
         os.makedirs(backup_dir)
+        print("helloworld")
     
     # Get the current timestamp
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
